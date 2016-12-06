@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="PlayngrabApp">
+
+  <head>
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="col-xs-offset-2 col-xs-8">
+          <div controller="homePageController">
+            <span><a href="#home">Home</a></span>
+            <span><a href="#about-us"> About Us</a></span>
+            <span><a href="#contact-us"> Conact Us</a></span>
+            <span><a href="#products"> Products</a></span>
+          </div>
+          <div ng-view></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="scripts/min_files/angular.min.js"></script>
+    <script src="scripts/min_files/angular-cookies.js"></script>
+    <script src="scripts/min_files/angular-route.min.js"></script>
+    <script src="scripts/min_files/ngstorage.min.js"></script>
+    <script src="scripts/min_files/jquery-3.1.1.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="modules/registration/services.js"></script>
+    <script src="modules/registration/controllers.js"></script>
+    <script src="modules/login/services.js"></script>
+    <script src="modules/login/controllers.js"></script>
+    <script src="modules/quiz/services.js"></script>
+    <script src="modules/quiz/controllers.js"></script>
+  </body>
+
+</html>
