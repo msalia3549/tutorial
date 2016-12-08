@@ -12,7 +12,7 @@ angular.module('Login')
       login_post_data.password = Base64.encode(player_login_data.password);
 
       console.log(login_post_data);
-      var hello = $http.post('http://localhost:3000/login/login_api', login_post_data)
+      var hello = $http.post('http://localhost:3000/quiz/quiz_data_api', login_post_data)
           .success(function (res) {
             if(res == 'success') {
             $location.path('/');
